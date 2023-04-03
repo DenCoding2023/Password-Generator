@@ -10,6 +10,43 @@ var upperCasearray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 var numbersArray = ['1','2','3','4','5','6','7','8','9','0'];
 
 
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+
+generateBtn.addEventListener("click", writePassword);
+
+// Write password to the #password input
+function writePassword() {
+  var correctPromts = getPrompts();  //change th is  
+  var passwordText = document.querySelector("#password");
+  
+    if (correctPromts) {
+  var newPassword = generatePassword();
+
+      passwordText.value = newPassword;
+  } else{{
+    passwordTest.value = "";
+  }
+  }
+
+
+
+  function generatePassword() {
+    var password = "";
+    for(var i = 0; i < characterLength; i++) {
+    var randomIndex = Math.floor(Math.random() * choiceArray.length);
+    password = password + choiceArray[randomIndex];
+  
+  }
+    return password;
+  }
+  
+}
+
+
+
+
 function getPrompts(){
    choiceArray = [];
 
@@ -20,7 +57,7 @@ function getPrompts(){
       return false; 
     }
 
- if (confirm("Would you like lowecase letters in your password")) {
+ if (confirm("Would you like lowercase letters in your password")) {
   choiceArray = choiceArray.concat(lowerCasesarray);
  } 
 
@@ -40,22 +77,10 @@ function getPrompts(){
 }
 
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 
-generateBtn.addEventListener("click", writePassword);
+
 
 // console.log(generatePassword(8)); // "F2#m9R$q"
  
