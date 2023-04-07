@@ -49,25 +49,25 @@ function writePassword() {
 function getPrompts(){
   optionsArray = []; //These are the if statement tha provide feedback to the user. I also provided exampples in order to guide the user
 
-    characterLength = parseInt(prompt("Select between (8 and 128) characters want your passwor to be?")); // this is were we set the perameters selectons
+    characterLength = parseInt(prompt("Select between (8 and 128) characters want your password to be?")); // this is were we set the perameters selectons
 
     if (isNaN (characterLength) || characterLength < 8 || characterLength > 128) { 
       alert("Character length has to be betwen (8 to 128) digits. Please try again!!.");
       return false; 
     }
-
+//Added a more personal note by providing example
  if (confirm("Would you like lowercase letters such as: (abcdef) in your password")) {
   optionsArray = optionsArray.concat(lowerCase);
  } 
-
+//Added a more personal note by providing example
  if (confirm("Would you like Uppercase letters such as:(ABCDEF) in your password")) {
   optionsArray = optionsArray.concat(upperCase);
  } 
-
+//Added a more personal note by providing example
  if (confirm("Would you like numbers such as: (12345) in your password")) {
   optionsArray = optionsArray.concat(numbers);
  } 
-
+//Added a more personal note by providing example
  if (confirm("Would you like special characters such as: (!@#$%^) in your password")) {
   optionsArray = optionsArray.concat(specialCharacter);
  }    
@@ -75,6 +75,7 @@ function getPrompts(){
  return true;
 }
 
+// On the css I changed the color of the body and the cars
 
 
 

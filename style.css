@@ -11,10 +11,10 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* changed the body color  */
 body {
   font-family: sans-serif;
-  background-color: #b6babe;
+  background-color: #b6beb9;
 }
 
 .wrapper {
@@ -29,13 +29,13 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/* modifided the color fof the card */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(340, 88%, 23%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
