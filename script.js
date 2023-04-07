@@ -28,7 +28,7 @@ function writePassword() {
   } else{{
     passwordText.value = "";
   }
-  }
+  }// Here the if and else statement provides the code to dislplay the code that was randomly selected. 
 
 
 // This is a loop that will continue one to go through the character options. 
@@ -36,7 +36,7 @@ function writePassword() {
     var password = "";
     for(var i = 0; i < characterLength; i++) {   //var is = 0 in order to start for the firt item in the line.
     var randomIndex = Math.floor(Math.random() * optionsArray.length);
-    password = password + optionsArray[randomIndex];       //this line conccatinate the radomizer and the possible optiosn.
+    password = password + optionsArray[randomIndex];       //this line the radomizer and the possible optiosn.
   
   }
     return password;
